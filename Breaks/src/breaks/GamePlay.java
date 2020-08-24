@@ -175,6 +175,23 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener{
 			}
 		}
 		
+		if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+			if(!play) {
+				play=true;
+				ballposX=120;
+				ballposY=250;
+				ballXdir=-1;
+				ballYdir=-2;
+				score=0;
+				totalBricks=21;
+				map = new MapGenerator(3,7);
+				
+				repaint();
+			}
+		}
+		
+		
+		
 	}
 	
 	
